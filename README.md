@@ -21,24 +21,31 @@ Image Upload: Integrated with Cloudinary for storing and managing uploaded image
 
 Technologies Used
 Frontend
+
 React.js
+
 React Router
+
 Bootstrap
+
 Backend
+
 Node.js
+
 Express.js
+
+
 MongoDB
+
 Authentication
-JWT (JSON Web Tokens) for secure sessions
-Bcrypt for password hashing
-Image Upload
-Cloudinary
+
+
 Deployment
 Frontend: Vercel
 Backend: Render
 Database: MongoDB Atlas
 Getting Started
-Follow these steps to set up the project locally.
+\
 
 
 
@@ -51,8 +58,7 @@ Cloudinary account for image storage
 Installation
 Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/Arvind7Goud/Job-portal.git
 Navigate to the project directory:
 
@@ -74,18 +80,25 @@ plaintext
 
 PORT=5000
 CLOUDINARY_API_KEY=your_cloudinary_api_key
+
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+
 FRONTEND_URL=http://localhost:3000
+
 DB_URL=your_mongodb_connection_string
+
 JWT_SECRET_KEY=your_jwt_secret
+
 JWT_EXPIRE=7d
+
 COOKIE_EXPIRE=7
 
 Run the application:
 
 Start the backend:
-bash
+
 
 cd ../backend
 npm run dev
