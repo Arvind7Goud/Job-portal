@@ -1,133 +1,170 @@
+<h1 align="center" style="font-size: 48px;">🌟 Job Portal Application 🌟</h1>
 
-Job Portal Application
+<p align="center">
+  <img src="https://img.shields.io/badge/MERN-Stack-brightgreen" alt="MERN Stack">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+  <img src="https://img.shields.io/github/stars/Arvind7Goud/Job-portal?style=social" alt="Stars">
+</p>
 
-A comprehensive job portal application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This application allows job seekers to browse job listings, apply for jobs, and manage applications seamlessly. Employers can post jobs, view applications, and manage their listings—all in one platform.
+<p align="center" style="font-size: 18px;">
+  A comprehensive job portal application built using the <strong>MERN Stack</strong>. It allows job seekers to browse listings, apply for jobs, and manage their applications seamlessly. Employers can post jobs, view applications, and manage their listings—all in one platform.
+</p>
 
+---
 
+<h2 style="font-size: 36px;">✨ Features</h2>
+<ul style="font-size: 18px;">
+  <li><strong>User Authentication:</strong> Secure role-based authentication using <strong>JWT</strong> for both job seekers and employers.</li>
+  <li><strong>Job Listings:</strong> Browse through a wide range of job listings fetched from <strong>MongoDB</strong>.</li>
+  <li><strong>Application Management:</strong> 
+    <ul>
+      <li>Job seekers can manage their applications.</li>
+      <li>Employers can view and manage received applications.</li>
+    </ul>
+  </li>
+  <li><strong>Responsive Design:</strong> Optimized for seamless usage across all devices.</li>
+  <li><strong>Image Upload:</strong> Integrated with <strong>Cloudinary</strong> for managing uploaded images.</li>
+</ul>
 
+---
 
+<h2 style="font-size: 36px;">🛠️ Technologies Used</h2>
 
-Features
-User Authentication: Secure and role-based authentication using JWT (JSON Web Tokens) for both job seekers and employers.
+<h3 style="font-size: 24px;">Frontend</h3>
+<ul style="font-size: 18px;">
+  <li>React.js</li>
+  <li>React Router</li>
+  <li>Bootstrap</li>
+</ul>
 
-Job Listings: Browse through a wide range of job listings fetched from MongoDB.
+<h3 style="font-size: 24px;">Backend</h3>
+<ul style="font-size: 18px;">
+  <li>Node.js</li>
+  <li>Express.js</li>
+  <li>MongoDB</li>
+</ul>
 
-Application Management:
-Job seekers can manage their job applications.
-Employers can view and manage received applications.
-Responsive Design: Optimized for a seamless experience across all devices.
-Image Upload: Integrated with Cloudinary for storing and managing uploaded images.
+<h3 style="font-size: 24px;">Authentication</h3>
+<ul style="font-size: 18px;">
+  <li>JWT (JSON Web Tokens)</li>
+  <li>Bcrypt for password hashing</li>
+</ul>
 
+<h3 style="font-size: 24px;">Image Upload</h3>
+<ul style="font-size: 18px;">
+  <li>Cloudinary</li>
+</ul>
 
-Technologies Used
-Frontend
+<h3 style="font-size: 24px;">Deployment</h3>
+<ul style="font-size: 18px;">
+  <li>Frontend: Vercel</li>
+  <li>Backend: Render</li>
+  <li>Database: MongoDB Atlas</li>
+</ul>
 
-React.js
+---
 
-React Router
+<h2 style="font-size: 36px;">🚀 Getting Started</h2>
+<p style="font-size: 18px;">Follow these steps to set up the project locally:</p>
 
-Bootstrap
+<h3 style="font-size: 24px;">Prerequisites</h3>
+<ul style="font-size: 18px;">
+  <li>Node.js (v22.2.0 or above) installed</li>
+  <li>MongoDB Atlas account or a local MongoDB server</li>
+  <li>Cloudinary account for image storage</li>
+</ul>
 
-Backend
+<h3 style="font-size: 24px;">Installation</h3>
 
-Node.js
-
-Express.js
-
-
-MongoDB
-
-Authentication
-
-
-Deployment
-Frontend: Vercel
-Backend: Render
-Database: MongoDB Atlas
-Getting Started
-\
-
-
-
-
-
-Prerequisites
-Node.js (v22.2.0 or above) installed on your machine
-MongoDB Atlas account (or a local MongoDB server)
-Cloudinary account for image storage
-Installation
-Clone the repository:
-
-
-git clone https://github.com/Arvind7Goud/Job-portal.git
-Navigate to the project directory:
-
-cd Job-portal
-Install dependencies for the backend:
-
+<ol style="font-size: 18px;">
+  <li>
+    Clone the repository:
+    <pre><code>git clone https://github.com/Arvind7Goud/Job-portal.git</code></pre>
+  </li>
+  <li>
+    Navigate to the project directory:
+    <pre><code>cd Job-portal</code></pre>
+  </li>
+  <li>
+    Install dependencies for the backend:
+    <pre><code>
 cd backend
 npm install
-Install dependencies for the frontend:
-
+</code></pre>
+  </li>
+  <li>
+    Install dependencies for the frontend:
+    <pre><code>
 cd ../frontend
 npm install
-Set up environment variables:
-
-Create a config.env file inside a config folder in the backend directory.
-Add the following variables and replace the placeholders with your specific configuration:
-plaintext
-
-
+</code></pre>
+  </li>
+  <li>
+    Set up environment variables:
+    <ul>
+      <li>Create a <code>config.env</code> file inside a <code>config</code> folder in the <code>backend</code> directory.</li>
+      <li>Add the following variables (replace placeholders with your details):</li>
+    </ul>
+    <pre><code>
 PORT=5000
 CLOUDINARY_API_KEY=your_cloudinary_api_key
-
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-
 FRONTEND_URL=http://localhost:3000
-
 DB_URL=your_mongodb_connection_string
-
 JWT_SECRET_KEY=your_jwt_secret
-
 JWT_EXPIRE=7d
-
 COOKIE_EXPIRE=7
-
-Run the application:
-
-Start the backend:
-
-
+</code></pre>
+  </li>
+  <li>
+    Run the application:
+    <ul>
+      <li>Start the backend:
+        <pre><code>
 cd ../backend
 npm run dev
-Start the frontend:
-
-
+</code></pre>
+      </li>
+      <li>Start the frontend:
+        <pre><code>
 cd ../frontend
 npm start
-Open your browser and navigate to http://localhost:3000 to view the app.
+</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Open your browser and navigate to <code>http://localhost:3000</code>.
+  </li>
+</ol>
 
+---
 
-Contributing
-Contributions are welcome! Follow these steps to contribute:
+<h2 style="font-size: 36px;">🤝 Contributing</h2>
+<p style="font-size: 18px;">
+  Contributions are welcome! Follow these steps to contribute:
+</p>
 
-Fork the repository.
-Create a branch for your feature or bug fix:
+<ol style="font-size: 18px;">
+  <li>Fork the repository.</li>
+  <li>Create a branch for your feature:
+    <pre><code>git checkout -b feature/YourFeatureName</code></pre>
+  </li>
+  <li>Commit your changes:
+    <pre><code>git commit -m "Add your message here"</code></pre>
+  </li>
+  <li>Push your branch:
+    <pre><code>git push origin feature/YourFeatureName</code></pre>
+  </li>
+  <li>Open a pull request.</li>
+</ol>
 
+---
 
-git checkout -b feature/YourFeatureName
-Commit your changes:
-
-
-git commit -m "Add your message here"
-Push to your branch:
-
-
-git push origin feature/YourFeatureName
-Open a pull request.
-Contact
-Arvind Goud
-GitHub: Arvind7Goud
-Project Link: Job Portal Repository
+<h2 style="font-size: 36px;">📞 Contact</h2>
+<p style="font-size: 18px;">
+  <strong>Arvind Goud</strong> <br>
+  <a href="https://github.com/Arvind7Goud">GitHub: Arvind7Goud</a> <br>
+  <a href="https://github.com/Arvind7Goud/Job-portal.git">Project Link: Job Portal Repository</a>
+</p>
