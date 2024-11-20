@@ -56,19 +56,13 @@ Copy code
 git clone https://github.com/Arvind7Goud/Job-portal.git
 Navigate to the project directory:
 
-bash
-Copy code
 cd Job-portal
 Install dependencies for the backend:
 
-bash
-Copy code
 cd backend
 npm install
 Install dependencies for the frontend:
 
-bash
-Copy code
 cd ../frontend
 npm install
 Set up environment variables:
@@ -76,7 +70,8 @@ Set up environment variables:
 Create a config.env file inside a config folder in the backend directory.
 Add the following variables and replace the placeholders with your specific configuration:
 plaintext
-Copy code
+
+
 PORT=5000
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
@@ -86,6 +81,7 @@ DB_URL=your_mongodb_connection_string
 JWT_SECRET_KEY=your_jwt_secret
 JWT_EXPIRE=7d
 COOKIE_EXPIRE=7
+
 Run the application:
 
 Start the backend:
@@ -94,27 +90,28 @@ bash
 cd ../backend
 npm run dev
 Start the frontend:
-bash
+
 
 cd ../frontend
 npm start
 Open your browser and navigate to http://localhost:3000 to view the app.
+
 
 Contributing
 Contributions are welcome! Follow these steps to contribute:
 
 Fork the repository.
 Create a branch for your feature or bug fix:
-bash
-Copy code
+
+
 git checkout -b feature/YourFeatureName
 Commit your changes:
-bash
-Copy code
+
+
 git commit -m "Add your message here"
 Push to your branch:
-bash
-Copy code
+
+
 git push origin feature/YourFeatureName
 Open a pull request.
 Contact
